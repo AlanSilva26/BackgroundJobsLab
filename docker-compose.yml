@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=Your_strong_password123
+    ports:
+      - "14333:1433"
+    healthcheck:
+      test: ["CMD", "/opt/mssql-tools/bin/sqlcmd", "-S", "localhost,1433", "-U", "SA", "-P", "Your_strong_password123", "-Q", "SELECT 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+    container_name: bjl-sql
+
+  mongo:
+    image: mongo:6
+    ports:
+      - "27018:27017"
+    container_name: bjl-mongo
