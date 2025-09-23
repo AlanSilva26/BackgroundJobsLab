@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{749F3D4A-C07C-41B5-A620-407B0170CF94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackgroundJobsLab.Api", "src\BackgroundJobsLab.Api\BackgroundJobsLab.Api.csproj", "{5955F055-F7E3-452A-B15B-554F1A4EDDDC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{350BB5CD-4844-43C2-B9D4-4176990C6714}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5955F055-F7E3-452A-B15B-554F1A4EDDDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5955F055-F7E3-452A-B15B-554F1A4EDDDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5955F055-F7E3-452A-B15B-554F1A4EDDDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5955F055-F7E3-452A-B15B-554F1A4EDDDC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5955F055-F7E3-452A-B15B-554F1A4EDDDC} = {749F3D4A-C07C-41B5-A620-407B0170CF94}
+	EndGlobalSection
+EndGlobal
