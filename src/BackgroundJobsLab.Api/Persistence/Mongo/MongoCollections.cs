@@ -16,7 +16,7 @@ public class MongoCollections
 
     public IMongoDatabase Database { get; }
 
-    public IMongoCollection<IngestionLog> IngestionLogs => Database.GetCollection<IngestionLog>("ingestion_logs");
+    public virtual IMongoCollection<IngestionLog> IngestionLogs => Database.GetCollection<IngestionLog>("ingestion_logs");
 }
 
 public class IngestionLog
